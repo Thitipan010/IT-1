@@ -1,8 +1,12 @@
-import Link from "next/link";
 export default function Footer() {
   return (
-    <footer className="bg-gray-800 text-white p-4 mt-8">        
-        <p>&copy; 2026 โดยนายฐิติพันธ์. All rights reserved.</p>
+    <footer className="footer">
+      <div >
+
+        <h2> เกี่ยวกับเรา</h2>
+        <p> โดย นายฐิติพันธ์ </p>
+
+      </div>
     </footer>
-  )
+  );
 }
