@@ -1,28 +1,41 @@
+"use client";
 import Link from "next/link";
+import { useState } from "react";
 
 export default function Navbar() {
+    const[menuOpen,setMenuOpen] = useState(false)
     return (
         <nav className="navbar">
-            <ul className="nav-links">
-                <li>
-                    <Link href="/" className="hover:text-gray-400">Home</Link>
-                </li>
+            <div className="nav-container">
 
-                <li>
-                    <Link href="/about" className="hover:text-gray-400">About</Link>
-                </li>
-                <li>
-                    <Link href="/contact" className="hover:text-gray-400">Contact</Link>
-                </li>
-                <li>
-                    <Link href="/login" className="hover:text-gray-400">Login</Link>
-                </li>
+                <Link href="/" className="logo">
+                    ROBOT SHOP
+                </Link>
 
-                <li>
-                    <Link href="/register" className="hover:text-gray-400">Register</Link>
-                </li>
-     
-           </ul>
+                <button className="menu-btn" onClick={() => setMenuOpen(!menuOpen)}>
+                    ☰
+                </button>
+
+                <ul className={menuOpen ? "nav-links active" : "nav-links"}>
+                    <li>
+                        <Link href="/" >Home</Link>
+                    </li>
+
+                    <li>
+                        <Link href="/about">About</Link>
+                    </li>
+                    <li>
+                        <Link href="/contact">Contact</Link>
+                    </li>
+                    <li>
+                        <Link href="/login">Login</Link>
+                    </li>
+                    <li>
+                        <Link href="/register">Register</Link>
+                    </li>
+
+                </ul>
+            </div>
         </nav>
     );
 }
