@@ -1,12 +1,10 @@
+import Link from "next/link";
 export default function Footer() {
   return (
     <footer className="footer">
-      <div >
-
-        <h2> เกี่ยวกับเรา</h2>
-        <p> โดย นายฐิติพันธ์ </p>
-
+      <div className="footer-container">       
+        <p>&copy; 2026 โดย ฐิติพันธ์ รักษ์แสงสว่าง : All rights reserved.</p>
       </div>
     </footer>
-  );
+    )
 }

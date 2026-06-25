@@ -1,14 +1,10 @@
 import Image from "next/image";
 
-
 export default function Home() {
   return (
-    <div >
-
-      <h3>ยินดีต้อนรับเข้าสู่เว็บ/</h3>
-      <h3>นายฐิติพันธ์/</h3>
-
-
+    <div>
+        <h2>ยินดีต้อนรับเข้าสู่  ของผมครับ</h2>
+        <p>โดย นายฐิติพันธ์ รักษ์แสงสว่าง </p>
     </div>
   );
 }
