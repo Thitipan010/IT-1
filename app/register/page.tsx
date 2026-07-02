@@ -11,6 +11,7 @@ export default function Register() {
     name: "",
     email: "",
     password: "",
+    phone: "",
   });
 
   async function handleSubmit(e: React.FormEvent) {
@@ -49,7 +50,12 @@ export default function Register() {
           placeholder="Password"
           type="password"
           onChange={(e) => setForm({ ...form, password: e.target.value })}
-        />
+         />
+        <input
+          placeholder="เบอร์โทร"
+          type="text"
+          onChange={(e) => setForm({ ...form, phone: e.target.value })}
+         />
         <button>Register</button>
       </form>
     </div>
