@@ -43,11 +43,7 @@ export default function Navbar() {
             <div className="nav-container">
 
                 <Link href="/" className="logo">
-<<<<<<< HEAD
-                   tiger SHOP
-=======
-                    โอเคมาม่า SHOP
->>>>>>> c6134f72d86e03045b5da7c736f6533ada1b0273
+                   tiger SHOP          
                 </Link>
 
                 <button className="menu-btn" onClick={() => setMenuOpen(!menuOpen)}>

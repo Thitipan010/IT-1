@@ -17,6 +17,7 @@ export default function Register() {
   async function handleSubmit(e: React.FormEvent) {
     e.preventDefault();
 
+
     const res = await fetch("/api/auth/register", {
       method: "POST",
       body: JSON.stringify(form),
@@ -40,26 +41,26 @@ export default function Register() {
           placeholder="Name"
           type="text"
           onChange={(e) => setForm({ ...form, name: e.target.value })}
+          required
         />
         <input
           placeholder="Email"
           type="email"
           onChange={(e) => setForm({ ...form, email: e.target.value })}
+          required
         />
         <input
           placeholder="Password"
           type="password"
           onChange={(e) => setForm({ ...form, password: e.target.value })}
-         />
+          required
+        />
         <input
-<<<<<<< HEAD
-          placeholder="เบอร์โทร ร้านไก่ทอดจำกัด"
-=======
           placeholder="เบอร์โทร"
->>>>>>> c6134f72d86e03045b5da7c736f6533ada1b0273
           type="text"
           onChange={(e) => setForm({ ...form, phone: e.target.value })}
-         />
+        />
+
         <button>Register</button>
       </form>
     </div>
