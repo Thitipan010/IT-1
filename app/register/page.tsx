@@ -52,7 +52,11 @@ export default function Register() {
           onChange={(e) => setForm({ ...form, password: e.target.value })}
          />
         <input
+<<<<<<< HEAD
           placeholder="เบอร์โทร ร้านไก่ทอดจำกัด"
+=======
+          placeholder="เบอร์โทร"
+>>>>>>> c6134f72d86e03045b5da7c736f6533ada1b0273
           type="text"
           onChange={(e) => setForm({ ...form, phone: e.target.value })}
          />
