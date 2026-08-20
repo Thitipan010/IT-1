@@ -60,7 +60,7 @@ export default function Navbar() {
 
                     {user && (
                         <li>
-                            <Link href="/dashboard">Dashboard</Link>
+                            <Link href="/blogs">บทความ</Link>
                         </li>
                     )}
 
