@@ -57,10 +57,13 @@ export default function Navbar() {
                     <li>
                         <Link href="/contact">Contact</Link>
                     </li>
+                    <li>
+                        <Link href="/blogs">บทความ</Link>
+                    </li>
 
                     {user && (
                         <li>
-                            <Link href="/blogs">บทความ</Link>
+                            <Link href="/dashboard">Dashboard</Link>
                         </li>
                     )}
 
