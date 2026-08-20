@@ -35,7 +35,6 @@ export default function Navbar() {
         router.refresh();
     }
 
-
     return (
         <nav className="navbar">
             <div className="nav-container">
@@ -52,7 +51,6 @@ export default function Navbar() {
                     <li>
                         <Link href="/" >Home</Link>
                     </li>
-
                     <li>
                         <Link href="/about">About</Link>
                     </li>
